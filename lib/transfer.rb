@@ -7,7 +7,7 @@ class Transfer
     @receiver = receiver
   end 
   
-  def valid 
+  def valid?
     if @sender.valid? == true && @receiver.valid? == true && @sender.balance >= @amount 
       return true 
     else 
